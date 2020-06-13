@@ -1,0 +1,28 @@
+.button{
+	-fx-background-color: pink;
+	-fx-max-width: 100;
+    	-fx-max-height: 100;
+	
+	-fx-font-size: 14px;
+	-fx-font-weight: bold
+}
+
+.text-field{
+    -fx-max-width: 500;
+    -fx-font-size: 15;
+}
+
+.list-cell{	
+
+	-fx-max-width: 500;
+    	-fx-max-height: 500;
+	 
+	-fx-opacity: 0.79;
+
+	-fx-font-size: 25;
+	-fx-font-weight: bold	
+}
+
+.pane {
+ 	-fx-background-image: url("../images/daleReedCoffee2.jpg");
+}

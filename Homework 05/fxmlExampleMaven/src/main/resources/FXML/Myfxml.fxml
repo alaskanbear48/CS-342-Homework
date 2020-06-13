@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id = "border1" fx:controller = "application.MyController" styleClass="pane">
+
+	<top><VBox xmlns:fx="http://javafx.com/fxml/1" fx:id = "vBox3" alignment="center" style="-fx-padding: 100 0 0 0;" spacing="5">
+
+		<TextField fx:id = "textMessage" text = "Welcome to Dale Reed's Coffee Shop!" editable="false"/>
+
+		<ListView fx:id = "coffeOrder" styleClass="list-cell"/>
+
+    </VBox></top>
+
+	<bottom><HBox xmlns:fx="http://javafx.com/fxml/1" fx:id = "hBox1" alignment="center" style="-fx-padding: 0 100 75 100;" spacing="10">
+
+		<VBox xmlns:fx="http://javafx.com/fxml/1" fx:id = "vBox1" spacing="5">
+	
+			<Button fx:id = "newOrder" text = "New Order" onAction="#newB"/>
+			<Button fx:id = "sugar" text = "Sugar" onAction="#sugarB" />
+			<Button fx:id = "cream" text = "Cream" onAction="#creamB" />
+			<Button fx:id = "total" text = "Total" onAction="#totalB" />
+	
+		</VBox>
+		
+		<VBox xmlns:fx="http://javafx.com/fxml/1" fx:id = "vBox2" spacing="5">
+		
+			<Button fx:id = "extraShot" text = "Extra Shot" onAction="#extraShotB" />
+			<Button fx:id = "vanilla" text = "Vanilla" onAction="#vanillaB" />
+			<Button fx:id = "caramel" text = "Caramel" onAction="#caramelB" />
+			<Button fx:id = "delete" text = "Delete " onAction="#deleteB" />
+
+		</VBox>
+		
+		
+	</HBox></bottom>
+
+</BorderPane>
